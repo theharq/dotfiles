@@ -1,0 +1,11 @@
+# if test "$1" == "kraken"; then
+#   echo -ne "\033]0;Kraken\007"
+#   cd ~/PROJECTS/Kraken
+# elif test "$1" == "sentinel"; then
+#   echo -ne "\033]0;Sentinel\007"
+#   cd ~/PROJECTS/Sentinel
+# else
+#   cd ~/PROJECTS/$1;
+# fi
+
+cd "$PROJECTS/$1"

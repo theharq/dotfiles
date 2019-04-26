@@ -1,0 +1,45 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "search.location": "sidebar",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.keymap": "none",
+    "explorer.confirmDelete": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "elixirLS.dialyzerEnabled": false,
+    "elixirLS.fetchDeps": false,
+    "[elixir]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "editor.formatOnSave": true
+    },
+    "terminal.integrated.copyOnSelection": true,
+    "files.associations": {
+        ".envrc": "shellscript"
+    },
+    "ruby.format": "rubocop",
+    "gitlens.views.fileHistory.location": "explorer",
+    "gitlens.views.lineHistory.location": "explorer",
+    "files.defaultLanguage": "ruby",
+    "breadcrumbs.enabled": true,
+    "elixirLS.projectDir": ".",
+    "window.zoomLevel": 0
+}

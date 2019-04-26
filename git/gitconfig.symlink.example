@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[user]
+	name = AUTHORNAME
+	email = AUTHOREMAIL
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[help]
+	autocorrect = 10
+[tag]
+	sort = version:refname
