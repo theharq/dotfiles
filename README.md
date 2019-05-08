@@ -8,6 +8,6 @@ those awesome dotfiles:
 
 ## Install
 
-	git clone https://github.com/theharq/dotfiles.git ~/.dotfiles
-	cd ~/.dotfiles
+	git clone https://github.com/theharq/dotfiles.git ~/dotfiles
+	cd dotfiles
 	script/bootstrap
