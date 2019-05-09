@@ -1,2 +1,3 @@
 export EDITOR='subl'
-export BUNDLER_EDITOR=='subl'
+export GIT_EDITOR='vim'
+export BUNDLER_EDITOR='subl'
