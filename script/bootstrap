@@ -27,29 +27,6 @@ fail () {
   exit
 }
 
-setup_gitconfig () {
-  if ! [ -f git/gitconfig.symlink ]
-  then
-    info 'setup gitconfig'
-
-    git_credential='cache'
-    if [ "$(uname -s)" == "Darwin" ]
-    then
-      git_credential='osxkeychain'
-    fi
-
-    user ' - What is your github author name?'
-    read -e git_authorname
-    user ' - What is your github author email?'
-    read -e git_authoremail
-
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" git/gitconfig.symlink.example > git/gitconfig.symlink
-
-    success 'gitconfig'
-  fi
-}
-
-
 link_file () {
   local src=$1 dst=$2
 
@@ -125,8 +102,44 @@ link_file () {
   fi
 }
 
+setup_gitconfig () {
+  if ! [ -f git/gitconfig.symlink ]
+  then
+    info 'setup gitconfig'
+
+    git_credential='cache'
+    if [ "$(uname -s)" == "Darwin" ]
+    then
+      git_credential='osxkeychain'
+    fi
+
+    user ' - What is your github author name?'
+    read -e git_authorname
+    user ' - What is your github author email?'
+    read -e git_authoremail
+
+    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" git/gitconfig.symlink.example > git/gitconfig.symlink
+
+    success 'gitconfig'
+  fi
+}
+
+install_dependencies () {
+  # If we're on a Mac, let's install and setup homebrew.
+  if [ "$(uname -s)" == "Darwin" ]
+  then
+    info "Installing dependencies"
+    if source bin/dot | while read -r data; do info "$data"; done
+    then
+      success "Dependencies installed"
+    else
+      fail "Error installing dependencies"
+    fi
+  fi  
+}
+
 install_dotfiles () {
-  info 'installing dotfiles'
+  info 'Installing dotfiles'
 
   local overwrite_all=false backup_all=false skip_all=false
 
@@ -138,19 +151,9 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+install_dependencies
 install_dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot | while read -r data; do info "$data"; done
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
 
 echo ''
 echo '  All installed!'
