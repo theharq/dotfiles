@@ -1,0 +1,14 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+brew "git"
+brew "rbenv"
+brew "redis"
+brew "ruby-build"
+brew "zsh"
+
+cask "iterm2"
+cask "font-fira-code"
+cask "sublime-text"
+cask "visual-studio-code"

@@ -49,6 +49,8 @@ $ZSH/homebrew/install.sh 2>&1
 # Upgrade homebrew
 echo "› brew update"
 brew update
+echo "  Installing apps with homebrew"
+brew bundle --file=~/dotfiles/homebrew/Brewfile
 
 # Install software
 echo "› $ZSH/script/install"
