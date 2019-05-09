@@ -1,8 +1,10 @@
+tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 brew "git"
+brew "getantibody/tap/antibody"
 brew "rbenv"
 brew "redis"
 brew "ruby-build"
