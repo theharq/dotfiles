@@ -1,0 +1,41 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_size": 16.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"index_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		".sass-cache",
+		"log",
+		"node_modules",
+		"bower_components",
+		"coverage",
+		"tmp/*",
+		"dist",
+		"app/assets/scripts/",
+		"_build",
+		"public",
+		"vendor",
+		"deps",
+		".elixir_ls"
+	],
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
