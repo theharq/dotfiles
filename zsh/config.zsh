@@ -37,3 +37,5 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+bindkey "^[[A" history-beginning-search-backward # Arrow up history autocomplete
+bindkey "^[[B" history-beginning-search-forward # Arrow down history autocomplete
