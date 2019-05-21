@@ -11,3 +11,13 @@ those awesome dotfiles:
 	git clone https://github.com/theharq/dotfiles.git ~/dotfiles
 	cd dotfiles
 	script/bootstrap
+
+## Switch shell to zsh
+
+    sudo echo "/usr/local/bin/zsh" >> /etc/shells
+    chsh -s /usr/local/bin/zsh
+
+## Known issues
+
+- Make sure to open the apps installed with cask like vscode or sublime, before symlinking.
+
