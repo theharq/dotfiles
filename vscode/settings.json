@@ -38,8 +38,12 @@
     "ruby.format": "rubocop",
     "gitlens.views.fileHistory.location": "explorer",
     "gitlens.views.lineHistory.location": "explorer",
-    "files.defaultLanguage": "ruby",
+    "files.defaultLanguage": "markdown",
     "breadcrumbs.enabled": true,
     "elixirLS.projectDir": ".",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "editor.formatOnSaveTimeout": 1500,
+    "[ruby]": {
+        "editor.formatOnSave": true
+    }
 }
