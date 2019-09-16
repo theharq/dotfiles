@@ -29,5 +29,6 @@
     "breadcrumbs.enabled": true,
     "window.zoomLevel": 0,
     "editor.formatOnSaveTimeout": 1500,
-    "ruby.intellisense": "rubyLocate"
+    "ruby.intellisense": "rubyLocate",
+    "explorer.confirmDragAndDrop": false
 }
