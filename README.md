@@ -17,6 +17,12 @@ those awesome dotfiles:
     sudo echo "/usr/local/bin/zsh" >> /etc/shells
     chsh -s /usr/local/bin/zsh
 
+## Disable default shortcuts
+Preferences -> Keyboard -> shortcuts:
+
+	Screenshots -> Disable "Screenshot and recording options"
+	Spotlight -> Disable both options
+
 ## Known issues
 
 - Make sure to open the apps installed with cask like vscode or sublime, before symlinking.
