@@ -22,7 +22,6 @@
     "files.associations": {
         ".envrc": "shellscript"
     },
-    "ruby.format": "rubocop",
     "gitlens.views.fileHistory.location": "explorer",
     "gitlens.views.lineHistory.location": "explorer",
     "files.defaultLanguage": "markdown",
