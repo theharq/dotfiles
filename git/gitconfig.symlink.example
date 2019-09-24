@@ -11,3 +11,5 @@
 	autocorrect = 10
 [tag]
 	sort = version:refname
+[core]
+  excludesfile = ~/.gitignore_global
