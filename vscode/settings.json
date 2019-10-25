@@ -12,11 +12,8 @@
     "gitlens.defaultDateStyle": "absolute",
     "gitlens.keymap": "none",
     "explorer.confirmDelete": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.mode.statusBar.enabled": false,
-    "gitlens.statusBar.enabled": false,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.copyOnSelection": true,
     "files.associations": {
@@ -29,5 +26,12 @@
     "window.zoomLevel": 0,
     "editor.formatOnSaveTimeout": 1500,
     "ruby.intellisense": "rubyLocate",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
