@@ -3,7 +3,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
-    "search.location": "sidebar",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
@@ -31,5 +30,14 @@
     "gitlens.statusBar.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.fontSize": 15
+    "editor.fontSize": 15,
+    "search.exclude": {
+        "_build": true,
+        ".elixir_ls": true,
+        "deps": true
+    },
+    "editor.formatOnSave": true,
+    "elixirLS.suggestSpecs": false,
+    "elixirLS.fetchDeps": false,
+    "elixirLS.projectDir": "."
 }
