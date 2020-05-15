@@ -38,7 +38,6 @@
     "editor.formatOnSave": true,
     "elixirLS.suggestSpecs": false,
     "elixirLS.fetchDeps": false,
-    "elixirLS.projectDir": ".",
     "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
     "vscode-run-rspec-file.custom-command": "bundle exec spring rspec",
