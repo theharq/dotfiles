@@ -42,4 +42,7 @@
     "files.trimTrailingWhitespace": true,
     "vscode-run-rspec-file.custom-command": "bundle exec spring rspec",
     "ruby.specCommand": "bundle exec spring rspec",
+    "workbench.colorCustomizations": {
+        "terminal.selectionBackground": "#fbff0091", //Currently SELECTED text
+    },
 }
