@@ -9,6 +9,8 @@ brew "asdf"
 brew "redis"
 brew "ruby-build"
 brew "zsh"
+brew "direnv"
+
 
 # Asdf dependencies
 brew "coreutils"
