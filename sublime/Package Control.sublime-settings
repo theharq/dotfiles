@@ -12,13 +12,12 @@
 		"Dracula Color Scheme",
 		"Duplicate And Increment",
 		"Elixir",
+		"ElixirSyntax",
 		"Handlebars",
 		"HTMLBeautify",
-		"MarkdownEditing",
 		"Monokai Extended",
 		"Package Control",
-		"Puppet",
 		"Sass",
-		"SideBarEnhancements"
-	]
+		"SideBarEnhancements",
+	],
 }
