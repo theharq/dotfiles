@@ -1,7 +1,16 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  { "key": "cmd+k",
+  {
+    "key": "cmd+k",
     "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u001bd" // delete from cursor to word end right
+    },
     "when": "terminalFocus"
   },
   {
@@ -39,5 +48,10 @@
     "key": "alt+cmd+l",
     "command": "-toggleSearchEditorContextLines",
     "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "-headwind.sortTailwindClasses",
+    "when": "editorFocus"
   }
 ]
