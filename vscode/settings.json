@@ -69,7 +69,7 @@
     "editor.accessibilitySupport": "off",
     "terminal.external.osxExec": "iTerm.app",
     "files.defaultLanguage": "ruby",
-    "ruby.specCommand": "bundle exec rspec",
+    "ruby.specCommand": "bundle exec spring rspec",
     "rewrap.wrappingColumn": 110,
     "terminal.integrated.cursorBlinking": true,
     "autoHide.hideOnOpen": false,
