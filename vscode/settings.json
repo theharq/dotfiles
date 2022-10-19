@@ -59,7 +59,6 @@
     "terminal.integrated.copyOnSelection": true,
     "vscode-run-rspec-file.custom-command": "bundle exec spring rspec",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
         "terminal.selectionBackground": "#fbff0091", //Currently SELECTED text
     },
@@ -70,8 +69,15 @@
     "editor.accessibilitySupport": "off",
     "terminal.external.osxExec": "iTerm.app",
     "files.defaultLanguage": "ruby",
+    "ruby.specCommand": "bundle exec rspec",
+    "rewrap.wrappingColumn": 110,
+    "terminal.integrated.cursorBlinking": true,
+    "autoHide.hideOnOpen": false,
+    "autoHide.autoHideSideBar": false,
+    "autoHide.autoHidePanel": false,
+    "editor.minimap.autohide": true,
+    "tabnine.experimentalAutoImports": true,
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.enabled": false,
-    "ruby.specCommand": "bundle exec spring rspec",
 }
