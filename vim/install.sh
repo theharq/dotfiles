@@ -11,7 +11,7 @@ if [ ! -f ~/.vim/autoload/pathogen.vim ]; then
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
   # clone dracula color scheme into vim
-  git clone git@github.com:dracula/vim.git ~/.vim/bundle/dracula-theme
+  git clone https://github.com/dracula/vim.git ~/.vim/bundle/dracula
 fi
 
 exit 0
