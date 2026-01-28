@@ -3,7 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 brew "git"
-brew "antibody"
+brew "antidote"
 brew "asdf"
 brew "redis"
 brew "ruby-build"

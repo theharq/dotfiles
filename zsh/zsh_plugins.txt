@@ -1,2 +1,1 @@
-mafredri/zsh-async
 sindresorhus/pure

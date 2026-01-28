@@ -1,8 +1,6 @@
 # Dynamic loading
-source <(antibody init)
-antibody bundle < ~/dotfiles/zsh/zsh_plugins.txt
+# https://antidote.sh/migrating-from-antibody
 
-# Static loading
-# antibody bundle < ~/dotfiles/zsh/zsh_plugins.txt > ~/dotfiles/zsh/zsh_plugins.sh
-# More info: https://getantibody.github.io/usage/
-# source ~/dotfiles/zsh/zsh_plugins.sh
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+source <(antidote init)
+antidote bundle < ~/dotfiles/zsh/zsh_plugins.txt
