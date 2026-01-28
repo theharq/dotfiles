@@ -24,8 +24,5 @@ brew "unixodbc"
 brew "unzip"
 brew "curl"
 brew "gpg"
-
-cask "iterm2"
 cask "font-fira-code"
-cask "sublime-text"
-cask "visual-studio-code"
+
