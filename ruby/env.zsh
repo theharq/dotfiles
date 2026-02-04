@@ -1,1 +1,1 @@
-export BUNDLER_EDITOR='subl'
+export BUNDLER_EDITOR='code'
