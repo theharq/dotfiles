@@ -4,3 +4,4 @@ TODO.md
 .elixir_ls
 .envrc
 .vscode
+.claude/settings.local.json
