@@ -8,4 +8,25 @@
 #   cd ~/PROJECTS/$1;
 # fi
 
-cd "$PROJECTS/$1"
+if [[ -z "$1" ]]; then
+  cd "$PROJECTS"
+elif [[ -d "$PROJECTS/$1" ]]; then
+  cd "$PROJECTS/$1"
+else
+  # Build a fuzzy glob: "abc" becomes *a*b*c*
+  local fuzzy="*"
+  for (( i=0; i<${#1}; i++ )); do
+    fuzzy+="${1:$i:1}*"
+  done
+  local matches=("$PROJECTS"/${~fuzzy}(/N))
+  if [[ ${#matches} -eq 1 ]]; then
+    cd "$matches[1]"
+  elif [[ ${#matches} -gt 1 ]]; then
+    echo "Multiple matches:"
+    for m in $matches; do echo "  ${m:t}"; done
+    return 1
+  else
+    echo "No match for '$1' in $PROJECTS"
+    return 1
+  fi
+fi

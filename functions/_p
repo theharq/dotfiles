@@ -1,2 +1,4 @@
 #compdef p
-_files -W $PROJECTS -/
+local -a dirs
+dirs=("$PROJECTS"/*(/:t))
+compadd -M 'l:|=* r:|=* m:{a-z}={A-Z}' -- $dirs
